@@ -1,0 +1,34 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+  --bg-base: #020305;
+  --text-main: #c7d0d9;
+}
+
+/* Global Reset - This fixes the boundary issues */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-base);
+  color: var(--text-main);
+  font-family: 'Rajdhani', sans-serif;
+  overflow-x: hidden; 
+}
+
+/* Forces the app to take up the full screen, removing the 1126px limit */
+#root {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3 {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+}
